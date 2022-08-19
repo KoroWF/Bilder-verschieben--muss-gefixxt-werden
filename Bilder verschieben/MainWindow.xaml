@@ -1,0 +1,36 @@
+﻿<Window x:Class="Bilder_verschieben.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bilder_verschieben"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="90*"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0" HorizontalAlignment="Stretch" Height="30">
+                <MenuItem Header="Bilder auswählen" Name="mnuBilder" Click="mnuBilder_Click"/>
+                <MenuItem Header="Gallery erstellen" Name="mnErstellen" Click="mnErstellen_Click"/>
+                 <MenuItem Header="Gallery anzeigen" Name="mnAnzeigen" Click="mnAnzeigen_Click"/>
+            </Menu>
+            <ListView Grid.Row="1" Name="Anzeige" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Height="400" ItemsSource="{Binding}" SelectionChanged="Anzeige_SelectionChanged">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Width="90" Margin="10">
+                            <Image Source="{Binding Pfad}" Width="60" Margin="0,10,0,0"/>
+                            <Label Content="{Binding Titel}" HorizontalAlignment="Center"/>
+                            <Label Content="{Binding Beschreibung}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel/>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+            </ListView>
+    </Grid>
+</Window>

@@ -1,0 +1,38 @@
+﻿<Window x:Class="Bilder_verschieben.FormBild"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bilder_verschieben"
+        mc:Ignorable="d"
+        Title="FormBild" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="90*"/>
+        </Grid.RowDefinitions>
+        
+        <Image Name="imgBild" Grid.Row="0" VerticalAlignment="Stretch"/>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40*"/>
+                <ColumnDefinition Width="60*"/>            
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Content="Titel"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="Beschreibung"/>
+
+            <TextBox Name="txtTitel" Grid.Row="0" Grid.Column="1" Width="100"/>
+            <TextBox Name="txtBesch" Grid.Row="1" Grid.Column="1" Width="100"/>
+
+            <Button Name="btnOK" Content="Ok" Grid.Row="3" Grid.Column="0" Click="btnOK_Click"/>
+            <Button Name="btnCancel" Content="Cancel" Grid.Row="3" Grid.Column="1" Click="btnCancel_Click"/>
+            
+        </Grid>
+    </Grid>
+</Window>

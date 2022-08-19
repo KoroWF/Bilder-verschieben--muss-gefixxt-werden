@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bilder verschieben", "Bilder verschieben\Bilder verschieben.csproj", "{F4B5C122-0E52-4F81-89C1-0558B4D84195}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiboBilder", "BiboBilder\BiboBilder.csproj", "{117EB111-2CBC-4B2F-A2D0-366386D768B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4B5C122-0E52-4F81-89C1-0558B4D84195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4B5C122-0E52-4F81-89C1-0558B4D84195}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4B5C122-0E52-4F81-89C1-0558B4D84195}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4B5C122-0E52-4F81-89C1-0558B4D84195}.Release|Any CPU.Build.0 = Release|Any CPU
+		{117EB111-2CBC-4B2F-A2D0-366386D768B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{117EB111-2CBC-4B2F-A2D0-366386D768B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{117EB111-2CBC-4B2F-A2D0-366386D768B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{117EB111-2CBC-4B2F-A2D0-366386D768B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4F44709-8A5A-4379-A184-FAFCC364C5E3}
+	EndGlobalSection
+EndGlobal
